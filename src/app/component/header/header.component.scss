@@ -1,0 +1,61 @@
+.header{
+    width: 1920px;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    // background: #d40f0f 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.address-book-text-logo{
+    display: flex;
+    margin-left: 190px;
+    // margin-top: 40px;
+    width: 168px;
+    height: 52px;
+    // background-color: #42515F;
+    opacity: 1;
+    
+}
+
+.Address-book-text{
+    display: flex;
+    flex-direction: column;
+    left: 246px;
+    width: 112px;
+    height: 52px;
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.address-text{
+    /* Layout Properties */
+top: 0px;
+left: 0px;
+width: 112px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 22px/25px Montserrat;
+letter-spacing: 0px;
+color: #008CFF;
+text-transform: uppercase;
+}
+
+.book-text{
+    /* Layout Properties */
+top: 25px;
+left: 0px;
+width: 70px;
+height: 27px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 22px/25px Montserrat;
+letter-spacing: 0px;
+color: #42515F;
+text-transform: uppercase;
+}

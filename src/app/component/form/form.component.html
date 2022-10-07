@@ -1,0 +1,113 @@
+<div class="form-content">
+    <form class="form">
+      <div class="form-head">
+        <div class="form-head-text">Address Book Form</div>
+        <mat-icon class="cancel-icon" routerLink="/dashboard"> cancel</mat-icon>
+      </div>
+      <div class="form-constrains">
+        <div class="row-content">
+          <label for="firstName" class="label text">Firs tName</label>
+          <br>
+          <input type="text" class="input"  id="firstName"  name="firstName" placeholder="Your FirstName" [(ngModel)]="person.firstName">
+        </div>
+        <div class="row-content">
+          <label for="lastName" class="label text">Last Name</label>
+          <br>
+          <input type="text" class="input"  id="lastName"  name="lastName" placeholder="Your lastName" [(ngModel)]="person.lastName">
+          
+        </div>
+        <div class="row-content">
+          <label for="email" class="label text">Email</label>
+          <br>
+          <input type="text" class="input" email id="email"  name="email" placeholder="Your Email" [(ngModel)]="person.email">
+        </div>
+        <div class="row-content">
+          <label for="phoneNumber" class="label text">Phone Number</label>
+          <br>
+          <input type="tel" class="input" id="phoneNumber" name="phoneNo" placeholder="Your phoneNo" [(ngModel)]="person.phoneNo">
+            
+        </div>
+        <div class="row-content">
+          <label for="address" class="label text">Address</label>
+          <br>
+          <textarea name="address" id="address" placeholder="Your address" [(ngModel)]="person.address"></textarea>
+          
+        </div>
+        <div class="row-content">
+          <div class="column-constrains">
+            <div class="column-content">
+              <label for="city" class="label text">City</label>
+              <br>
+              <select name="city" id="city" [(ngModel)]="person.city">
+                <option selected value="default">Select City</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Kolhapur">Kolhapur</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Sangli">Sangli</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Surat">Surat</option>
+              </select>
+            </div>
+            <div class="column-content">
+              <label for="state" class="label text">State</label>
+              <br>
+              <select name="state" id="state" [(ngModel)]="person.state">
+                <option selected  value="default">Select State</option>
+                <option value="MadhyaPradesh">Madhya Pradesh</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </div>
+            <div class="column-content">
+              <label for="zip" class="label text">Zip code</label>
+              <br>
+              <input type="text" class="input zipcode" id="zip" name="zip"  placeholder="Your zipcode" [(ngModel)]="person.zip">
+            </div>
+          </div>
+        </div>
+        <div class="buttons-contact">
+          <button type="button" class="button button-submit" id="submitButton" (click)="addPerson()" *ngIf="this.userId==null">Add</button>&nbsp;&nbsp;
+          <button type="button" class="button button-submit" id="submitButton" (click)="updatePerson()" *ngIf="this.userId!=null">update</button>
+          <button type="reset" class="button button-reset" id="resetButton" >Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
